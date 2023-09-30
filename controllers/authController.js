@@ -70,7 +70,7 @@ const handleLogin = async (req, res) => {
 		});
 
 		// Send authorization roles and access token to user
-		res.json({ roles, accessToken });
+		res.json({ accessToken });
 	} else {
 		res.sendStatus(401); // once again
 	}

@@ -81,7 +81,7 @@ const handleRefreshToken = async (req, res) => {
 				maxAge: 24 * 60 * 60 * 1000,
 			});
 
-			res.json({ roles, accessToken });
+			res.json({ accessToken });
 		}
 	);
 };
